@@ -1,0 +1,47 @@
+// public DomCard chooseCardFromHand(String message, boolean isNotOptional) {
+    // DomCard selectedCard = null;if(!isNotOptional)
+    // {
+    //     System.out.println("to select no cards, type n");
+    // }
+
+    // if(CardsInHand.size()==0)
+    // {
+    //     System.out.println("no cards in hand, choice = null");
+    //     return null;
+    // }else
+    // {
+    //     List<DomCard> cardList = CardsInHand.GetFullStack();
+    //     String options = "";
+
+    //     for (int i = 0; i < cardList.size(); i++) {
+    //         options += (i + 1) + "): |" + cardList.get(i).getName() + "|\n";
+    //     }
+
+    //     System.out.println(message);
+    //     System.out.println(options);
+    //     if (!isNotOptional) {
+    //         System.out.println("to select no cards, type n");
+    //     }
+
+    //     int choice = -1;
+    //     boolean nothanks = false;
+    //     String input = System.console().readLine();
+    //     while (choice < 1 || choice > cardList.size()) {
+    //         try {
+    //             choice = Integer.parseInt(input); // convert input to a card selection
+    //             selectedCard = cardList.get(choice - 1);
+    //         } catch (NumberFormatException e) {
+    //             if (input.equals("n")) { // player chose skip "n"
+    //                 if (isNotOptional) {
+    //                     System.out.println("sorry, this is not an optional selection, you MUST choose a card");
+    //                 } else {
+    //                     return null; // players chose the skip, and input is accepted
+    //                 }
+    //             } else {
+    //                 System.out.println("Invalid choice, please enter a number between 1 and " + cardList.size());
+    //                 input = System.console().readLine();
+    //             }
+    //         }
+    //     }
+    // }return selectedCard;
+    // }

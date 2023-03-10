@@ -1,0 +1,25 @@
+package trashcan;
+
+import java.util.ArrayList;
+
+import Classes.CardClasses.DomCard;
+
+public class Hand {
+    private ArrayList<DomCard> cards;
+
+    public Hand() {
+        this.cards = new ArrayList<>();
+    }
+
+    public ArrayList<DomCard> getCards() {
+        return cards;
+    }
+
+    public void addCard(DomCard card) {
+        cards.add(card);
+    }
+
+    public void removeCard(DomCard card) {
+        cards.remove(card);
+    }
+}

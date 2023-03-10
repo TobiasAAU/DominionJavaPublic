@@ -1,0 +1,20 @@
+package trashcan;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.ArrayList;
+
+import Classes.CardStack;
+import Classes.BordSetupClasses.Board;
+import Classes.CardClasses.DomCard;
+
+public class DiscStack extends CardStack {
+
+    public DiscStack(ArrayList<DomCard> startingCards, Board board) {
+        super(startingCards, board);
+    }
+
+    public DomCard drawFromDeck() {
+        return removeFromTop();
+    }
+}

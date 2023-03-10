@@ -1,0 +1,31 @@
+package trashcan;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import Classes.CardStack;
+import Classes.BordSetupClasses.Board;
+import Classes.CardClasses.DomCard;
+
+public class DeckStack extends CardStack {
+    public DeckStack(ArrayList<DomCard> cardsInStack, Board board) {
+        super(cardsInStack, board);
+    }
+
+    // @Override
+    // public DomCard drawCard() {
+    // DomCard drawnCard = super.drawCard();
+
+    // if (drawnCard == null) {
+    // Board.getActivePlayer().shuffleDiscPile(this);
+    // drawnCard = super.drawCard();
+    // }
+
+    // return drawnCard;
+    // }
+
+    // public DomCard drawFromDeck() {
+    //     return drawCard();
+    // }
+}
